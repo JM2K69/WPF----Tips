@@ -3,9 +3,23 @@
 #########################################################################
 
 [Void][System.Reflection.Assembly]::LoadWithPartialName('presentationframework') 
-foreach ($item in $(gci .\assembly\ -Filter *.dll).name) {
-    [Void][System.Reflection.Assembly]::LoadFrom("assembly\$item")
-}
+[System.Reflection.Assembly]::LoadFrom('assembly\ControlsEx.dll') | out-null
+[System.Reflection.Assembly]::LoadFrom('assembly\MahApps.Metro.dll')      | out-null  
+[System.Reflection.Assembly]::LoadFrom('assembly\MahApps.Metro.IconPacks.Core.dll')      | out-null 
+[System.Reflection.Assembly]::LoadFrom('assembly\MahApps.Metro.IconPacks.dll')      | out-null 
+[System.Reflection.Assembly]::LoadFrom('assembly\MahApps.Metro.IconPacks.Entypo.dll')      | out-null 
+[System.Reflection.Assembly]::LoadFrom('assembly\MahApps.Metro.IconPacks.FontAwesome.dll')      | out-null 
+[System.Reflection.Assembly]::LoadFrom('assembly\MahApps.Metro.IconPacks.Material.dll') | out-null
+[System.Reflection.Assembly]::LoadFrom('assembly\MahApps.Metro.IconPacks.MaterialDesign.dll') | out-null
+[System.Reflection.Assembly]::LoadFrom('assembly\MahApps.Metro.IconPacks.Modern.dll') | out-null
+[System.Reflection.Assembly]::LoadFrom('assembly\MahApps.Metro.IconPacks.Octicons.dll') | out-null
+[System.Reflection.Assembly]::LoadFrom('assembly\MahApps.Metro.IconPacks.PicolIcons.dll') | out-null
+[System.Reflection.Assembly]::LoadFrom('assembly\MahApps.Metro.IconPacks.RPGAwesome.dll') | out-null
+[System.Reflection.Assembly]::LoadFrom('assembly\MahApps.Metro.IconPacks.SimpleIcons.dll') | out-null
+[System.Reflection.Assembly]::LoadFrom('assembly\MahApps.Metro.IconPacks.Unicons.dll') | out-null
+[System.Reflection.Assembly]::LoadFrom('assembly\MahApps.Metro.IconPacks.Zondicons.dll') | Out-Null
+[System.Reflection.Assembly]::LoadFrom('assembly\Microsoft.Xaml.Behaviors.dll') | Out-Null
+[System.Reflection.Assembly]::LoadFrom('assembly\System.Windows.Interactivity.dll') | Out-Null
 #########################################################################
 #                        Load Main Panel                                #
 #########################################################################
